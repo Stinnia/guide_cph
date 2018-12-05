@@ -28,11 +28,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row nav">
 <div class="col text-center border d-inline text-align"><a href="home.html">Home</a></div>
         <div class="col text-center border d-inline text-align"><a href="map.html">Map</a></div>
         <div class="col text-center border d-inline text-align"><a href="about.html">About</a></div>
         </div>
+		<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 	  </div>
 	  <div class="container p-0">
 	  <div class="h2 text-center border-bottom bg-danger">Location</div></div>
