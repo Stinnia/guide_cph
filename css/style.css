@@ -6,9 +6,9 @@ body{
 .login {
 	height: 900px;
 	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+    background-size: auto;
 }
-/* Below line is used for online Google font */
-@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 
 @media only screen and (max-width: 736px) {
