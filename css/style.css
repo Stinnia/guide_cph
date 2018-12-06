@@ -2,6 +2,9 @@
 /* CSS Document */
 body{
 	position: relative;
+	height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .login {
 	height: 736px;
@@ -9,6 +12,9 @@ body{
 	background-repeat: no-repeat;
     background-size: cover;
 }
+#map {
+    height: 100%;
+  }
 
 
 @media only screen and (max-width: 736px) {
