@@ -1,28 +1,126 @@
 @charset "utf-8";
 /* CSS Document */
-body{
+body {
 	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Khula', Verdana, 'Open Sans' sans-serif;
+}
+[data-role=page] {
+	height: 100% !important;
+	position: relative !important;
+}
+[data-role=footer] {
+	bottom: 0;
+	position: absolute !important;
+	top: auto !important;
+	width: 100%;
 }
 .login {
+	padding-top:20%;
+
 	height: 736px;
-	background-color:red;
+	background-color: red;
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
+}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+	height: 85%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 90%;
+	margin: 0;
+	padding: 0;
+}
+/* Change the color of the default theme */ 
+.ui-bar-a {
+}
+.ui-btn-up-a {
+}
+.home {
+	color: black;
+	font-family: 'Khula', sans-serif;
+	font-size: 3em;
+	width: 314px;
+	height: 200px;
+	display: inline-block;
+	margin: 20px;
+}
+.map {
+	background-image: url(../images/map.png);
+	background-size: cover;
+}
+.attractions {
+	background-image: url(../images/attractions.png);
+	background-size: cover;
+}
+.informations {
+	background-image: url(../images/informations.png);
+	background-size: cover;
+}
+
+@media only screen and (max-width: 736px) {
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+.logininputfield{
+
+		border: none;
+		  border-bottom: 2px solid red;
+		  background-color: #DFD1C2;
+}
+	.ui-content {
+		padding: 0;
+		margin: 0;
+	-webkit-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	-moz-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	}
+
+.container {
+	background-color: #DFD1C2;
+	height: 100vh;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+}
+
+.container2 {
+	background-color: #DFD1C2;
+	font-family: 'Amatic SC', cursive;
 }
 
 
-@media only screen and (max-width: 736px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-	.nav {
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-	}
-	.home {
-		height: 236px;
-		vertical-align: center;
-	}
+.nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.home {
+	height: 27.8vh;
+	width: 80%;
+	vertical-align: center;
+	display: block;
+	margin: 0;
+}
+
+
+.btn.btn-primary{
+	width: 80%;
+	color: rgb(255, 255, 255);
+	background-color: #D2BC7C;
+	border-color: red;
+	
+}
+#form_id{
+	margin-left:18%;
+}
+
+label{
+	margin-left:12%;
+}
 }
