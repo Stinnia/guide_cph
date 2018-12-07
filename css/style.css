@@ -47,9 +47,6 @@ html, body {
 	height: 200px;
 	display: inline-block;
 	margin: 20px;
-	-webkit-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
--moz-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
 }
 .map {
 	background-image: url(../images/map.png);
@@ -63,27 +60,37 @@ box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
 	background-image: url(../images/informations.png);
 	background-size: cover;
 }
+
 @media only screen and (max-width: 736px) {
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
 }
-	.container {
-		height: 100vh;
-		font-family: 'Amatic SC', cursive;
-		background-color: #D1232A;
+	.ui-content {
+		padding: 0;
+		margin: 0;
+	-webkit-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	-moz-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
 	}
+.ui-mobile {
+	background-color: #D1232A;
+}
+.container {
+	background-color: #D1232A;
+	height: 100vh;
+	font-family: 'Amatic SC', cursive;
+}
 .nav {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
 .home {
-	height: 28.8vh;
+	height: 27.8vh;
 	width: 100%;
 	vertical-align: center;
 	display: block;
 	margin: 0;
-	
 }
 }
