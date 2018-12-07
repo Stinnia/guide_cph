@@ -26,23 +26,19 @@ body {
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
 #map {
-	height: 85%;
+	height: 90vh;
 }
+
 /* Optional: Makes the sample page fill the window. */
 html, body {
 	height: 90%;
 	margin: 0;
 	padding: 0;
 }
-/* Change the color of the default theme */ 
-.ui-bar-a {
-}
-.ui-btn-up-a {
-}
 .home {
 	color: black;
 	font-family: 'Khula', sans-serif;
-	font-size: 3em;
+	font-size: 2.5em;
 	width: 314px;
 	height: 200px;
 	display: inline-block;
@@ -87,10 +83,15 @@ html, body {
 	width: 100%;
 }
 .home {
-	height: 27.8vh;
+	height: 28.3vh;
 	width: 100%;
-	vertical-align: center;
 	display: block;
 	margin: 0;
+	padding-top: 19%;
 }
+}
+@media only screen and (max-width: 320px) {
+	.h5 {
+		font-size: 17px!important;
+	}	
 }

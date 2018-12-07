@@ -18,20 +18,28 @@
 
 	<!-- Vores styles -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 </head>
 	
 <body>
 <div data-role="page">
-
-    <div class="container mb-4">
-		<div class="h3 text-white text-center pt-2">Be your own guiding light</div>
+  <div class="container">
+    <div id="container-1">
+      <div id="container-inner">Inside Text</div>
+		
+      <div id="close">Close</div>
+  </div>
+  </div>
+    <div class="container">
+	  <div class="h3 text-white text-center pt-2">Be your own guiding light</div>
         <div role="main" class="ui-content">
-            <a href="guide.html" data-transition="slidefade"><div class="col-sm home attractions text-center pt-5">Attractions</div></a>
-            <a href="map.html" data-transition="slidefade"><div class="col-sm home map text-center pt-5">Map</div></a>
-            <a href="extra.html" data-transition="slidefade"><div class="col-sm home informations text-center pt-5">Informations</div></a>
+            <a href="guide.html" data-transition="slidefade"><div class="col-sm home attractions text-center">Attractions</div></a>
+            <a href="map.html" data-transition="slidefade"><div class="col-sm home map text-center">Map</div></a>
+            <a href="extra.html" data-transition="slidefade"><div class="col-sm home informations text-center align-middle">Informations</div></a>
         </div><!-- /content -->
   <div class="h5 text-white text-center pt-2">Sightseeing through Lama Ole & Hannah’s old Copenhagen</div>
 	</div>
   </div><!-- /page -->
+<script src="js/lightbox.js"></script>
 </body>
 </html>
