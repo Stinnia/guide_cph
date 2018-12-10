@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Khula', Verdana, 'Open Sans' sans-serif;
+	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
 }
 [data-role=page] {
 	height: 100% !important;
@@ -63,16 +64,22 @@ html, body {
 	background-size: cover;
 }
 
+
+
+
+
+
 @media only screen and (max-width: 736px) {
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
+	
 }
 .logininputfield{
 
 		border: none;
-		  border-bottom: 2px solid red;
-		  background-color: #DFD1C2;
+		  border-bottom: 2px solid #D84B65;
+		  background: transparent;
 }
 	.ui-content {
 		padding: 0;
@@ -83,17 +90,21 @@ html, body {
 	}
 
 .container {
-	background-color: #DFD1C2;
+	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
 	height: 100vh;
 	font-family: 'Amatic SC', cursive;
 	color: white;
 }
 
 .container2 {
-	background-color: #DFD1C2;
 	font-family: 'Amatic SC', cursive;
 }
-
+.container3 {
+	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+	height: 100vh;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+}
 
 .nav {
 	position: fixed;
@@ -112,8 +123,10 @@ html, body {
 .btn.btn-primary{
 	width: 80%;
 	color: rgb(255, 255, 255);
-	background-color: #D2BC7C;
-	border-color: red;
+	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-color: #C58D1E;
+	
 	
 }
 #form_id{
@@ -121,6 +134,79 @@ html, body {
 }
 
 label{
-	margin-left:12%;
+	margin-left:10%;
 }
+
+.helptext{
+
+	padding-top: 60%;
+	padding-left: 10%;
+	
+}
+.herebutton{
+	color: #d84b65;
+}
+
+.h2.text-center{
+	padding-top: -10%;
+}
+.card{
+	margin-top: 15px;
+	background-image: linear-gradient(to bottom right, #d84b65, #eb7187);
+color: aliceblue;
+box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
+
+
+}
+.card-body{
+
+	height:100px;
+	color: aliceblue;
+}
+
+.blockquote-footer{
+	color: aliceblue;
+
+}
+.card-header{
+
+	height:40px;
+	color: aliceblue;
+	font-size: 15px;
+}
+.address{
+	font-size: 15px;
+}
+
+.hrbetween{
+	
+	color: white !important;
+	background-color: white !important;
+	
+}
+.jumbotron{
+	background: transparent; 
+	height: 30px;
+	font-size: 20px;
+	color: aliceblue;
+	font-family: 'Amatic SC', cursive;
+	
+}
+
+.btn.btn-primary2.float-right.second{
+	color: rgb(255, 255, 255);
+	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	background-color: #D2BC7C;
+	border-color: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#myModal{
+	color: black;
+	
+}
+.file-upload.btn.btn-primary.two{
+	font-size: 12px;
+	width: 200px;
+}
+
 }
