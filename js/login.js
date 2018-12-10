@@ -4,7 +4,7 @@ function validate(){
 var password = document.getElementById("password").value;
 if ( password == "1234"){
 alert ("Login successfully");
-window.location = "destinations2.html"; // Redirecting to other page.
+window.location = "home.html"; // Redirecting to other page.
 return false;
 }
 else{
