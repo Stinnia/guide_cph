@@ -1,0 +1,115 @@
+{
+    "places": {
+        "poi-01": {
+            "title": "Nørreport",
+            "adress": "Nørreport St., 1358 København",
+            "geo": {
+                "lat": "55.6836722",
+                "long": "12.5693963"
+            },
+            "info-full": "Nørreport Station is an S-train, metro and main line railway station in Copenhagen, Denmark. It is located in the district of Indre By, and is named for the historic Nørreport city gate, near the original location of which it is located. It is the busiest railway station in Denmark, serving 165,000 people daily. The entire station is underground, with three pairs of platforms: one for S-trains, one for main line trains and one for the metro. The station is located on the Boulevard Line of the S-train and main line network.",
+            "info-short": "This is the S-station where you should start your tour."
+        },
+        "poi-02": {
+            "title": "'The Inner Universe' Exhibition",
+            "adress": "Købmagergade 48, 1150 København, 3rd floor",
+            "geo": {
+                "lat": "55.6810735",
+                "long": "12.5068976"
+            },
+            "info-full": "Short after Ole and Hannah came back from the East in 1972, they participated in this exhibition that went on for a few weeks. Each room was dedicated to different spiritual practices and they got the last room, painted already in Tibetan colours, so they just put up some thankas, showed some pictures on slides and guided meditations. Here they also noticed a hindu guru guiding meditations in English and got the idea to translate our meditations to Danish first. A man coming to this exhibition offered them the basement of his building around the corner for free to meet in regular basis. This came to be the first dimondway buddhist center in the West. ",
+            "info-short": "Here the first meditations were guided by Lama Ole and Hannah."
+        },
+        "poi-03": {
+            "title": "The first Buddhist Center",
+            "adress": "Skindergade 3, 1159 København",
+            "geo": {
+                "lat": "55.6808101",
+                "long": "12.5717689"
+            },
+            "info-full": "If the big gate is open, one can enter the courtyard and access the basement through the first door to the right and still appreciate some of the ceiling paintings and pillars that were preserved – in what is now a storage room for a private building. This place hosted our first gompa in the West from 1973 to 1975 and was visited by many Lamas of our lineage. When 16th Karmapa visited them there in 1974, he insisted that they should find a new place. Three days after he left Denmark, the building overflowed with waste waters and it was clear what to do. Our actual buddhist center in Svanemøllevej was purchased then.",
+            "info-short": "From 1973 to 1975 in the basement of the building the first buddhist center was located."
+        },
+        "poi-04": {
+            "title": "Academic Danish Boxing Club",
+            "adress": "Fiolstræde 2, 1171 København",
+            "geo": {
+                "lat": "55.679344",
+                "long": "12.5695956"
+            },
+            "info-full": "The grey low building after the Italian restaurant on the corner. Lama Ole used to come here regularly to box for 4 years during his university days.",
+            "info-short": "Lama Ole used to come here regularly to box for 4 years during his university days."
+        },
+        "poi-05": {
+            "title": "University of Copenhagen ",
+            "adress": "Frue Pl.,København",
+            "geo": {
+                "lat": "55.6796321",
+                "long": "12.5725899"
+            },
+            "info-full": "It was while they were both studying at this university that Lama Ole and Hannah met again, after many years apart – since they used to live on the same street and play together as children. Their first meeting here happened at the university canteen, known as ”The Cannibal” - a funny myth said that occasionally they would cook a student in their kitchen. One can access the university canteen through the gate A after the main entrance. After crossing gate A ”The Canibal” is located after the courtyard in the basement of the last building to the left.",
+            "info-short": "University of Copenhagen, where Ole and Hannah studied and met each other."
+        },
+        "poi-06": {
+            "title": "Lama Ole & Bjørn's old apartment",
+            "adress": "Fiolstræde 16, 1171 København",
+            "geo": {
+                "lat": "55.6806069",
+                "long": "12.5709082"
+            },
+            "info-full": "Here on the 2nd floor Ole and his brother Bjørn lived during their wild university years. Sometimes they would use the water pipe outside the building to climb up or slide down instead of using the stairs. ",
+            "info-short": "Here Ole and Bjorn lived during their university years"
+        },
+        "poi-07": {
+            "title": "Højbro Bridge",
+            "adress": "bridge connecting streets Gammel Strand and Vindebrogade",
+            "geo": {
+                "lat": "55.677599",
+                "long": "12.5799829"
+            },
+            "info-full": "During one of his LSD trips in the 60'ies, Lama Ole said, standing on this bridge while overlooking the Parliament in front, ”Things are not!” - and all its walls and windows became transparent to him. Afterwards he said ”Things are!” - and everything became solid again. This bridge is next to the the Absalon statue in Højbro square, right in front of the Danish Parliament.",
+            "info-short": "Højbro Bridge"
+        },
+        "poi-08": {
+            "title": "Café Nick ",
+            "adress": "Nikolajgade 20, 1068 København",
+            "geo": {
+                "lat": "55.6781119",
+                "long": "12.5780276"
+            },
+            "info-full": "One of Ole and Bjørn's favourite bars, during their wild days. It is nowadays one the few authentic old school bars remaining in Copenhagen.  Here Ole and Bjørn used to engage in a lot of fights. They say each opponent used to put some Danish crowns in the bar and go outside to fight. Whoever won would drank afterwards in the bar for all that money, but they often ended up sharing anyways.",
+            "info-short": "Favorite bar of Ole and Bjorn in the 60ies."
+        },
+        "poi-09": {
+            "title": "Hong Kong Bar",
+            "adress": "Nyhavn 7, 1051 København",
+            "geo": {
+                "lat": "55.6806885",
+                "long": "12.5184495"
+            },
+            "info-full": "Another of Ole and Bjørn's old fighting places, beautifully located in the now pintoresque harbour area of Nyhavn.",
+            "info-short": "Another favorite bar in Nyhavn."
+        },
+        "poi-10": {
+            "title": "The Odd Fellow Palæet ",
+            "adress": "Bredgade 28, 1260 København",
+            "geo": {
+                "lat": "55.6828154",
+                "long": "12.5198314"
+            },
+            "info-full": "Here is where the 16th Karmapa gave the black crown ceremony in 1974, to an audience of approximately 1000 people. The original building where this ceremony took place, was located in the back of the main one and afterwards it burned down. Nowadays there is an open backyard on the place of the former building.  ",
+            "info-short": "First Black Crown ceremony place in Copenhagen"
+        },
+        "poi-11": {
+            "title": "Vor Frelsers Kirke / Our Saviours Church",
+            "adress": "Sankt Annæ Gade 29, 1416 København",
+            "geo": {
+                "lat": "55.6727999",
+                "long": "12.5896335"
+            },
+            "info-full": "The Church of Our Saviour is a baroque church in Copenhagen, Denmark, most famous for its helix spire with an external winding staircase that can be climbed to the top, offering extensive views over central Copenhagen. It is also noted for its carillon, which is the largest in northern Europe and plays melodies every hour from 8 am to midnight. From the high tower of this church Lama Ole and his brother Bjørn used to climb up the outer stairs and ask each other on the top “Should we take the stairs down or should we fly?. ”",
+            "info-short": "Look at Copenhagen from the height",
+            "info-extra": "Opening hours: Monday - Saturday 10 am - 4 pm.  Sundays and holidays 10:30 am - 4 pm. The tower closes temporarely for safety reasons in case of strong wind or rain.  Entrance fee 35 - 50 dkk. http: //www.vorfrelserskirke.dk/taarnet"
+        }
+    }
+}
