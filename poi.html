@@ -78,13 +78,15 @@
                     var title = childSnap.child("title").val();
                     var infoShort = childSnap.child("info-short").val();
                     var infoFull = childSnap.child("info-full").val();
-                    statusHTML += '<div class="col-xs-6 col-md-3 m-3" id=\"' + id + '\">';
-                    statusHTML += title;
+                    statusHTML += '<div class="media mt-5" id=\"' + id + '\">';
+                    statusHTML += '<div class="img-fluid mr-3 "><img class="rounded" src="images/attractions.png" alt="Placeholder"></div>'
+
+                    statusHTML += '<div class="media-body"><div class="media-title"><strong>' + title + '</strong></div>';
                     statusHTML += "</br>";
                     statusHTML += infoShort;
                     statusHTML += "</br>";
                     statusHTML += infoFull;
-                    statusHTML += '</div>';
+                    statusHTML += '</div></div>';
                 }); // end of foreach
                 statusHTML += '</div>'; //closing the loop's tag
                 $('#allPois').html(statusHTML); // sending the html code to the page
