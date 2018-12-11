@@ -38,6 +38,7 @@
     </script>
 
     <!-- Own styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Own functions -->
@@ -49,7 +50,7 @@
 
             // reading from DB and setting into a list
             database.ref('places/').on('value', function(snapshot) {
-                var statusHTML = '<ul class="PoiList">';
+                var statusHTML = '<ul data-role="listview" class="PoiList">';
                 snapshot.forEach(function(childSnap) {
                     var id = childSnap.key;
                     var title = childSnap.child("title").val();
@@ -78,10 +79,9 @@
                     var title = childSnap.child("title").val();
                     var infoShort = childSnap.child("info-short").val();
                     var infoFull = childSnap.child("info-full").val();
-                    statusHTML += '<div class="media mt-5" id=\"' + id + '\">';
-                    statusHTML += '<div class="img-fluid mr-3 "><img class="rounded" src="images/attractions.png" alt="Placeholder"></div>'
-
-                    statusHTML += '<div class="media-body"><div class="media-title"><strong>' + title + '</strong></div>';
+                    statusHTML += '<div class="media col-xs-6 mt-5" id=\"' + id + '\">';
+                    statusHTML += '<div class="mr-3"><img class="rounded" src="https://placeimg.com/200/200/people" alt="Placeholder"></div>';
+                    statusHTML += '<div data-role="header" class="media-body ui-content"><div class="media-title"><strong>' + title + '</strong></div>';
                     statusHTML += "</br>";
                     statusHTML += infoShort;
                     statusHTML += "</br>";
@@ -103,19 +103,11 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="card" id="PoiList">
-            </div>
+            <div class="card" id="PoiList"></div>
         </div>
-        <div class="row" id="allPois">
-
-        </div>
+        <div class="row" id="allPois"></div>
 
     </div>
-
-
-    </div>
-
-
 </body>
 
 </html>
