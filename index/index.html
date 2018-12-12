@@ -52,6 +52,7 @@
     <script src="js/login.js"></script>
 
     <!-- My own scripts-->
+    <script src="js/data_from_FB.js"></script>
 
 </head>
 
@@ -107,7 +108,6 @@
             </a>
         </div>
     </div>
-
 
 
     <!-- Start of second page: tour -->
@@ -185,90 +185,8 @@
     <!-- /page info finish -->
 
 
-    <!-- Start of second page: #poi -->
-    <div data-role="page" id="poi" data-theme="a">
-        <div data-role="header">
-            <div class="jumbotron">
-                <a href="#one" data-transition="flip">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-            </div>
-        </div>
-        <!-- /header -->
 
-
-        <div data-role="content" data-theme="a">
-
-
-        </div>
-        <!-- /content -->
-
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div>
-        <!-- /footer -->
-    </div>
-    <!-- /page info poi -->
-
-
-
-    <!-- Start of second page: #info -->
-    <div data-role="page" id="info" data-theme="a">
-        <div data-role="header">
-            <div class="jumbotron">
-                <a href="#one" data-transition="flip">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-            </div>
-        </div>
-        <!-- /header -->
-
-
-        <div data-role="content" data-theme="a">
-
-
-        </div>
-        <!-- /content -->
-
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div>
-        <!-- /footer -->
-    </div>
-    <!-- /page two -->
-
-
-
-    <!-- Start of second page: #tree -->
-    <div data-role="page" id="tree" data-theme="a">
-
-        <div data-role="header">
-            <h1>tree</h1>
-        </div>
-        <!-- /header -->
-
-        <div data-role="content" data-theme="a">
-            <h2>tree</h2>
-            <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.
-            </p>
-            <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
-            <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>
-
-        </div>
-        <!-- /content -->
-
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div>
-        <!-- /footer -->
-    </div>
-    <!-- /page tree -->
-
-
-
-
-
-    <!-- Start of third page: #popup -->
+    <!-- Start of  page: #popup -->
     <div data-role="page" id="popup">
 
         <div data-role="header" data-theme="e">
@@ -292,36 +210,6 @@
     </div>
     <!-- /page popup -->
 
-
-
-    <script>
-        // creating a list of POIs from FB
-        $(document).ready(function() { //script starts working after all html is uploaded
-
-            // calling DB
-            var database = firebase.database();
-
-            // reading from DB and setting into a list
-            database.ref('places/').on('value', function(snapshot) {
-                var statusHTML = '<!-- list of POIs  -->';
-                snapshot.forEach(function(childSnap) {
-                    var id = childSnap.key;
-                    var title = childSnap.child("title").val();
-                    var infoShort = childSnap.child("info-short").val();
-                    statusHTML += '<a href=\"#' + id + '\"><div data-aos="fade-up" data-aos-duration="1500"><div class="card mb-2">';
-                    statusHTML += '<img class="card-img-top" src="images/b13.png" alt=\"' + title + '\"><div class="card-body">';
-                    statusHTML += '<p class "card-title">';
-                    statusHTML += title;
-                    statusHTML += '</p>';
-                    statusHTML += '<p class="card-text-two">' + infoShort + '</p>';
-                    statusHTML += '</div></div></div></a>';
-                }); // end of foreach
-                $('#PoiList').html(statusHTML); //sending info to the card
-            }, function(error) {
-                console.log("Error: " + error.code);
-            }); //end read
-        }); //end ready
-    </script>
 </body>
 
 
