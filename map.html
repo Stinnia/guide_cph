@@ -1,11 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Location</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Location</title>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="utf-8">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -14,71 +13,205 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 	<!-- Google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Khula%7COpen+Sans%7CAmatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Khula|Open+Sans|Amatic+SC" rel="stylesheet">
+
 	<!-- Vores styles -->
 	<link rel="stylesheet" href="css/style_stinnia.css">
-</head>
+
+  </head>
   <body>
+	   <div data-role="page">
     <div class="container">
-		
-
-
-	  </div>
-
-	  <div data-role="page">
-        <div class="container">
-			<a href="#page1" data-rel="back" data-transition="slidefade" class="position-fixed border mt-2 pr-2 pl-2 text-white font-weight-light">Back</a>
-			<div class="h3 text-white text-center border-bottom">Location</div>
-          <div class="ui-content">
+		<a href="#page1" data-rel="back" data-transition="slidefade" class="position-fixed border mt-2 pr-2 pl-2 text-white font-weight-light">Back</a>
+		<div class="h3 text-white text-center border-bottom">Location</div>
   <div id="map"></div>
-          </div>
-        </div>
     </div>
-<script>
-      // Note: This example requires that you consent to location sharing when
-      // prompted by your browser. If you see the error "The Geolocation service
-      // failed.", it means you probably did not give permission for the browser to
-      // locate you.
-      var map, infoWindow;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 55.6834142, lng: 12.5717939},
-          zoom: 6
-        });
-        infoWindow = new google.maps.InfoWindow;
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            infoWindow.open(map);
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
+	  </div>
+    <script>
+     function detectBrowser() {
+            var sUsrAg = navigator.userAgent;
+            var mapdiv = document.getElementById("map");
+            if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1) {
+                mapdiv.style.width = '50vh';
+                mapdiv.style.height = '50vh';
+            } else {
+                mapdiv.style.width = '50vh';
+                mapdiv.style.height = '50vh';
+            }
         }
-      }
+        var myLatLng;
+        var latit;
+        var longit;
+        function geoSuccess(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
+            myLatLng = {
+                lat: latitude,
+                lng: longitude
+            };
+            var mapProp = {
+                //            center: new google.maps.LatLng(latitude, longitude), // puts your current location at the centre of the map,
+                zoom: 13,
+					center: {lat: 55.6834142, lng: 12.5717939},
+                mapTypeId: 'roadmap',
+				gestureHandling: "greedy",
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
+            //call renderer to display directions
+            directionsDisplay.setMap(map);
+            var bounds = new google.maps.LatLngBounds();
+            //        var mapOptions = {
+            //            mapTypeId: 'roadmap'
+            //        };
+            // Multiple Markers
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'My location'
+            });
+            var markers = [
+                ['Nørreport', 55.6833363, 12.5713741],
+                ['Købmagergade 48', 55.6811446, 12.5767045],
+                ['Skindergade 3', 55.6808332, 12.5761832],
+                ['Fiolstræde 2', 55.6794151, 12.5740742],
+                ['Univercity of Copenhagen', 55.6802311, 12.5718611],
+                ['Fiolstræde 16', 55.6806077, 12.5725484],
+                ['Højbro Bridge', 55.677501, 12.5796126],
+                ['Café Nick', 55.6781086, 12.5823181],
+                ['Hong Kong Bar', 55.6806652, 12.5885748],
+                ['Odd Fellow Palæ', 55.68266172, 12.5893004],
+                ['Vor Frelsers Kirke', 55.6728411, 12.5936429],
+                ['my current location', latitude, longitude]
+            ];
+            // Info Window Content
+            var infoWindowContent = [
+                ['<div class="info_content">' +
+                    '<h3>' + markers[0][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[1][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[2][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[3][0] + '</h3>' +
+                    '</div>'
+                ],
 
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
-      }
-	google.maps.event.addDomListener(window, 'load', initialize);
+                ['<div class="info_content">' +
+                    '<h3>' + markers[4][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[5][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[6][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[7][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[8][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[9][0] + '</h3>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>' + markers[10][0] + '</h3>' +
+                    '</div>'
+                ]
+            ];
+            // Display multiple markers on a map
+            var infoWindow = new google.maps.InfoWindow(),
+                marker, i;
+            // Loop through our array of markers & place each one on the map
+            for (i = 0; i < markers.length; i++) {
+                var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                bounds.extend(position);
+                marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    title: markers[i][0]
+                });
+                // Allow each marker to have an info window
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        infoWindow.setContent(infoWindowContent[i][0]);
+                        infoWindow.open(map, marker);
+                        latit = marker.getPosition().lat();
+                        longit = marker.getPosition().lng();
+                        // console.log("lat: " + latit);
+                        // console.log("lng: " + longit);
+                    }
+                })(marker, i));
+                marker.addListener('click', function() {
+                    directionsService.route({
+                        // origin: document.getElementById('start').value,
+                        origin: myLatLng,
+                        // destination: marker.getPosition(),
+                        destination: {
+                            lat: latit,
+                            lng: longit
+                        },
+                        travelMode: 'WALKING'
+                    }, function(response, status) {
+                        if (status === 'OK') {
+                            directionsDisplay.setDirections(response);
+                        } else {
+                            window.alert('Directions request failed due to ' + status);
+                        }
+                    });
+                });
+                // Automatically center the map fitting all markers on the screen
+                map.fitBounds(bounds);
+            }
+        }
+        // function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        //     directionsService.route({
+        //         // origin: document.getElementById('start').value,
+        //         origin: myLatLng,
+        //         destination: marker.getPosition(),
+        //         travelMode: 'DRIVING'
+        //     }, function(response, status) {
+        //         if (status === 'OK') {
+        //             console.log('all good');
+        //             directionsDisplay.setDirections(response);
+        //         } else {
+        //             window.alert('Directions request failed due to ' + status);
+        //         }
+        //     });
+        // }
+        function geoError() {
+            alert("Geocoder failed.");
+        }
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+                // alert("Geolocation is supported by this browser.");
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
     </script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxmSWTJ74578eRmgbDaPT0qF7ld0eIIes&callback=initMap">
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxmSWTJ74578eRmgbDaPT0qF7ld0eIIes&callback=getLocation">
     </script>
+
 </body>
+
 </html>
