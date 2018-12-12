@@ -9,26 +9,49 @@
     <!-- jqmobile-->
 
     <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <!-- my css-->
+
+    <!-- Jquery Core and other libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
     <!-- jqmobile-->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- my css-->
     <link rel="stylesheet" href="css/style.css" />
+
+
+    <!-- adding Firebase to the project -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCFehxZmR7Ml3f85kHhHlFrHQd0w19A46M",
+            authDomain: "guidecph-1543331288734.firebaseapp.com",
+            databaseURL: "https://guidecph-1543331288734.firebaseio.com",
+            projectId: "guidecph-1543331288734",
+            storageBucket: "guidecph-1543331288734.appspot.com",
+            messagingSenderId: "1025601520459"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <!-- Login script-->
     <script src="js/login.js"></script>
+
+    <!-- My own scripts-->
 
 </head>
 
@@ -54,13 +77,13 @@
                             <input type="password" name="password" id="password" class="logininputfield" /><br>
                             <input type="button" class="btn btn-primary text-center" value="Login" id="submit" onclick="validate()" />
                         </form>
-                        <p class="helptext">If the password dosen´t work contact the admin<a href="#landingpage" class="herebutton"
-                                data-transition="pop"> here</a></p>
+                        <p class="helptext">If the password dosen´t work contact the admin<a href="#landingpage" class="herebutton" data-transition="pop"> here</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- /content -->
+    </div>
+    <!-- /content -->
 
 
     <!-- /landingpage -->
@@ -68,134 +91,151 @@
 
         <div data-role="content">
 
-         
-            <h2 class="text-center" >Menu</h2>
-                <a href="#tour" data-transition="flip">
-              
-                    <img src=".\images\b12.png" class="img-fluid mb-2 rounded" alt="Responsive image">
-                </a>
-                
-                <a href="#map" data-transition="flip">
-                    <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
-                </a>
-              
-                <a href="#info" data-transition="flip">
-                    <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
-                </a>
-            </div>
+
+            <h2 class="text-center">Menu</h2>
+            <a href="#tour" data-transition="flip">
+
+                <img src=".\images\b12.png" class="img-fluid mb-2 rounded" alt="Responsive image">
+            </a>
+
+            <a href="#map" data-transition="flip">
+                <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
+            </a>
+
+            <a href="#info" data-transition="flip">
+                <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
+            </a>
+        </div>
     </div>
-    
- 
+
+
 
     <!-- Start of second page: tour -->
     <div data-role="page" id="tour" data-theme="a">
         <div data-role="header">
             <div class="jumbotron">
-                <a href="#one" data-transition="flip">
+                <a href="#landingpage" data-transition="flip">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
             </div>
-        </div><!-- /header -->
+        </div>
+        <!-- /header -->
 
-
-        <div data-role="content" data-theme="a">
-
-
-        </div><!-- /content -->
+        <div data-role="content" data-theme="a" id="PoiList">
+        </div>
+        <!-- /content -->
 
         <div data-role="footer">
             <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page tour finish -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page tour finish -->
 
 
     <!-- Start of second page: map -->
     <div data-role="page" id="map" data-theme="a">
         <div data-role="header">
             <div class="jumbotron">
-                <a href="#one" data-transition="flip">
+                <a href="#landingpage" data-transition="flip">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
             </div>
-        </div><!-- /header -->
+        </div>
+        <!-- /header -->
 
 
         <div data-role="content" data-theme="a">
             <!-- /map will go here -->
-           <p>here will be a map</p> 
+            <p>here will be a map</p>
 
-        </div><!-- /content -->
+        </div>
+        <!-- /content -->
 
         <div data-role="footer">
             <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page mapfinish-->
-
-<!-- Start of second page: #info -->
-<div data-role="page" id="info" data-theme="a">
-    <div data-role="header">
-        <div class="jumbotron">
-            <a href="#one" data-transition="flip">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
         </div>
-    </div><!-- /header -->
+        <!-- /footer -->
+    </div>
+    <!-- /page map finish-->
 
-
-    <div data-role="content" data-theme="a">
-
-
-    </div><!-- /content -->
-
-    <div data-role="footer">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page info finish -->
-
-
-<!-- Start of second page: #poi -->
-<div data-role="page" id="poi" data-theme="a">
-    <div data-role="header">
-        <div class="jumbotron">
-            <a href="#one" data-transition="flip">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
+    <!-- Start of second page: #info -->
+    <div data-role="page" id="info" data-theme="a">
+        <div data-role="header">
+            <div class="jumbotron">
+                <a href="#landingpage" data-transition="flip">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
         </div>
-    </div><!-- /header -->
+        <!-- /header -->
 
 
-    <div data-role="content" data-theme="a">
+        <div data-role="content" data-theme="a">
 
 
-    </div><!-- /content -->
-
-    <div data-role="footer">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page info poi -->
-
-
-
-!-- Start of second page: #info -->
-<div data-role="page" id="info" data-theme="a">
-    <div data-role="header">
-        <div class="jumbotron">
-            <a href="#one" data-transition="flip">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
         </div>
-    </div><!-- /header -->
+        <!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page info finish -->
 
 
-    <div data-role="content" data-theme="a">
+    <!-- Start of second page: #poi -->
+    <div data-role="page" id="poi" data-theme="a">
+        <div data-role="header">
+            <div class="jumbotron">
+                <a href="#one" data-transition="flip">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div>
+        <!-- /header -->
 
 
-    </div><!-- /content -->
+        <div data-role="content" data-theme="a">
 
-    <div data-role="footer">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page two -->
+
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page info poi -->
+
+
+
+    <!-- Start of second page: #info -->
+    <div data-role="page" id="info" data-theme="a">
+        <div data-role="header">
+            <div class="jumbotron">
+                <a href="#one" data-transition="flip">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div>
+        <!-- /header -->
+
+
+        <div data-role="content" data-theme="a">
+
+
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page two -->
 
 
 
@@ -204,23 +244,25 @@
 
         <div data-role="header">
             <h1>tree</h1>
-        </div><!-- /header -->
+        </div>
+        <!-- /header -->
 
         <div data-role="content" data-theme="a">
             <h2>tree</h2>
-            <p>I have an id of "two" on my page container. I'm the second page container in this multi-page
-                template.</p>
-            <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code>
-                swatch assigments here to show off how flexible it is. You can add any content or widget to
-                these pages, but we're keeping these simple.</p>
+            <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.
+            </p>
+            <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
             <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>
 
-        </div><!-- /content -->
+        </div>
+        <!-- /content -->
 
         <div data-role="footer">
             <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page tree -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page tree -->
 
 
 
@@ -231,25 +273,55 @@
 
         <div data-role="header" data-theme="e">
             <h1>Dialog</h1>
-        </div><!-- /header -->
+        </div>
+        <!-- /header -->
 
         <div data-role="content" data-theme="d">
             <h2>Popup</h2>
-            <p>I have an id of "popup" on my page container and only look like a dialog because the link to me
-                had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code>
-                attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+            <p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the
+                transition to pop. Without this, I'd be styled as a normal page.</p>
             <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to
                     page "one"</a></p>
-        </div><!-- /content -->
+        </div>
+        <!-- /content -->
 
         <div data-role="footer">
             <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page popup -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page popup -->
 
 
 
+    <script>
+        // creating a list of POIs from FB
+        $(document).ready(function() { //script starts working after all html is uploaded
 
+            // calling DB
+            var database = firebase.database();
+
+            // reading from DB and setting into a list
+            database.ref('places/').on('value', function(snapshot) {
+                var statusHTML = '<!-- list of POIs  -->';
+                snapshot.forEach(function(childSnap) {
+                    var id = childSnap.key;
+                    var title = childSnap.child("title").val();
+                    var infoShort = childSnap.child("info-short").val();
+                    statusHTML += '<a href=\"#' + id + '\"><div data-aos="fade-up" data-aos-duration="1500"><div class="card mb-2">';
+                    statusHTML += '<img class="card-img-top" src="images/b13.png" alt=\"' + title + '\"><div class="card-body">';
+                    statusHTML += '<p class "card-title">';
+                    statusHTML += title;
+                    statusHTML += '</p>';
+                    statusHTML += '<p class="card-text-two">' + infoShort + '</p>';
+                    statusHTML += '</div></div></div></a>';
+                }); // end of foreach
+                $('#PoiList').html(statusHTML); //sending info to the card
+            }, function(error) {
+                console.log("Error: " + error.code);
+            }); //end read
+        }); //end ready
+    </script>
 </body>
 
 
