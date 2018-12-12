@@ -124,7 +124,15 @@
  .ui-page.ui-page-theme-a.ui-page-active{
 	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
  }
+ .header{
+	font-size: 30px;
+}
 
+
+ /* menu: */
+.menu{
+
+}
 
 }
 

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jq mobile app</title>
+
+    <!-- jqmobile-->
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- my css-->
+    <!-- jqmobile-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Login script-->
+    <script src="js/login.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- /landingpage -->
+    <div data-role="page" id="landingpage">
+
+            <!-- /header -->
+            <div data-role="header">
+                   <h2>Menu</h2>
+                </div><!-- /header finish -->
+
+        <div data-role="content">
+
+         
+            
+                <a href="#tour" data-transition="flip">
+              
+                    <img src=".\images\b12.png" class="img-fluid mb-2 rounded" alt="Responsive image">
+                </a>
+                
+                <a href="#map" data-transition="flip">
+                    <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
+                </a>
+              
+                <a href="#info" data-transition="flip">
+                    <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
+                </a>
+            </div>
+    </div>
+    
+ 
+
+    <!-- Start of second page: tour -->
+    <div data-role="page" id="tour" data-theme="a">
+        <div data-role="header">
+            <div class="jumbotron">
+                <a href="#landingpage" data-transition="flip">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div><!-- /header -->
+
+
+        <div data-role="content" data-theme="a">
+
+
+        </div><!-- /content -->
+        <!-- /Menu -->
+        <div data-role="footer" data-position="fixed" class="menu">		
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <!-- /Menu finish -->
+        <!-- /footer -->
+    </div><!-- /page tour finish -->
+
+
+    <!-- Start of second page: map -->
+    <div data-role="page" id="map" data-theme="a">
+        <div data-role="header">
+            <div class="jumbotron">
+                <a href="#one" data-transition="flip">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div><!-- /header -->
+
+
+        <div data-role="content" data-theme="a">
+            <!-- /map will go here -->
+           <p>here will be a map</p> 
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page mapfinish-->
+
+
+
+<!-- Start of second page: #info -->
+<div data-role="page" id="info" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page info finish -->
+
+
+<!-- Start of second page: #poi -->
+<div data-role="page" id="poi" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page info poi finish -->
+
+
+<!-- Start of second page: #info -->
+<div data-role="page" id="info" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page info info finish -->
+
+
+
+    <!-- Start of second page: #tree -->
+    <div data-role="page" id="tree" data-theme="a">
+
+        <div data-role="header">
+            <h1>tree</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" data-theme="a">
+            <h2>tree</h2>
+            <p>I have an id of "two" on my page container. I'm the second page container in this multi-page
+                template.</p>
+            <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code>
+                swatch assigments here to show off how flexible it is. You can add any content or widget to
+                these pages, but we're keeping these simple.</p>
+            <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page tree -->
+
+
+<!-- Start of second page: destination list -->
+<div data-role="page" id="map" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+        <!-- /map will go here -->
+       <p>here will be a map</p> 
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page destination list finish-->
+
+<!-- Start of second page: destination page -->
+<div data-role="page" id="map" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+        <!-- /map will go here -->
+       <p>here will be a map</p> 
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page destination page finish-->
+
+
+
+
+
+    <!-- Start of third page: #popup -->
+    <div data-role="page" id="popup">
+
+        <div data-role="header" data-theme="e">
+            <h1>Dialog</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" data-theme="d">
+            <h2>Popup</h2>
+            <p>I have an id of "popup" on my page container and only look like a dialog because the link to me
+                had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code>
+                attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+            <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to
+                    page "one"</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page popup -->
+
+
+
+
+</body>
+
+
+</html>
