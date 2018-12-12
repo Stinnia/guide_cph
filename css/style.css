@@ -5,8 +5,9 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Khula', Verdana, 'Open Sans' sans-serif;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+	
+	
+	background-color: #d1232a;
 }
 [data-role=page] {
 	height: 100% !important;
@@ -44,7 +45,7 @@ html, body {
 }
 .home {
 	color: black;
-	font-family: 'Khula', sans-serif;
+
 	font-size: 3em;
 	width: 314px;
 	height: 200px;
@@ -73,6 +74,7 @@ html, body {
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
+	font-family: 'Open Sans', sans-serif;
 	
 }
 .logininputfield{
@@ -88,22 +90,24 @@ html, body {
 	-webkit-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
 	-moz-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
 	box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	font-family: 'Open Sans', sans-serif;
 	}
 
 .container {
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-	height: 100vh;
-	font-family: 'Amatic SC', cursive;
+	
+	height: 200vh;
 	color: white;
+	font-family: 'Open Sans', sans-serif;
+	color: #d1232a;
 }
 
 .container2 {
-	font-family: 'Amatic SC', cursive;
+	
 }
 .container3 {
 	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
 	height: 100vh;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Open Sans', sans-serif;
 	color: white;
 }
 
@@ -152,17 +156,19 @@ label{
 	padding-top: -10%;
 }
 .card{
-	margin-top: 15px;
-	background-image: linear-gradient(to bottom right, #d1232a, #da373d) !important;
-color: aliceblue;
+margin-top: 15px;	
 box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
+font-family: 'Open Sans', sans-serif;
+border: none;
+
 
 
 }
 .card-body{
-
+	font-family: 'Open Sans', sans-serif;
 	height:100px;
-	color: aliceblue;
+	color: black;
+	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
 }
 
 .blockquote-footer{
@@ -170,10 +176,11 @@ box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
 
 }
 .card-header{
-
+	font-family: 'Open Sans', sans-serif;
 	height:40px;
-	color: aliceblue;
+	
 	font-size: 15px;
+	background-image: transparent;
 }
 .address{
 	font-size: 15px;
@@ -189,8 +196,8 @@ box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
 	background: transparent; 
 	height: 30px;
 	font-size: 20px;
-	color: aliceblue;
-	font-family: 'Amatic SC', cursive;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
 	
 }
 
@@ -218,14 +225,14 @@ box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
 	background-image: linear-gradient(to bottom right, #d1232a, #da373d) !important;
 	color: aliceblue;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
-
+	font-family: 'Open Sans', sans-serif;
 
 }
 
 #des1body{
 	height:550px;
 	color: aliceblue;
-	
+	font-family: 'Open Sans', sans-serif;
 }
 .twentytwenty-container{
 	max-width: 100%;
@@ -236,7 +243,7 @@ box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
 }
 .btext{
 	font-size: 14px;
-	
+	font-family: 'Open Sans', sans-serif;
 }
 
 .btn.btn-light{
@@ -246,5 +253,18 @@ box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
 	border-color: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+.glyphicon.glyphicon-chevron-left{
+	color: black !important;
+}
+
+.card-text-two{
+	font-size: 14px !important;
+}
+
+.card-img-top{
+	height: 180px;
+}
+
+
 
 }
