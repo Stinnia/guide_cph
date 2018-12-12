@@ -1,194 +1,256 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1;">
-<title>Jq mobile app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jq mobile app</title>
 
-<!-- jqmobile-->
+    <!-- jqmobile-->
 
-<!-- Bootstrap-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-<!-- google fonts-->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<!-- my css-->
-<!-- jqmobile-->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<link rel="stylesheet" href="css/style.css" />
-<!-- Login script-->
-<script src="js/login.js"></script>
-
-
-
-
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- my css-->
+    <!-- jqmobile-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Login script-->
+    <script src="js/login.js"></script>
 
 </head>
 
 <body>
 
 
-        <div data-role="page" id="one">
+    <div data-role="page" id="one">
 
-                <div data-role="header" >
-                        <div class="container">
-                    <div class="h2 text-center" >Please use the password provided by Diamantvejsbuddhisme</div>
+        <div data-role="header">
+            <div class="container">
+                <div class="h2 text-center">Please use the password provided by Diamantvejsbuddhisme</div>
+            </div>
+        </div>
+        <!-- /header -->
+
+        <div data-role="content">
+            <div class="container login">
+                <div class="container text-center">
+
+                    <div class="main"><br><br><br>
+                        <form id="form_id" method="post" name="myform">
+                            <label class="enter-pass">Enter password below</label><br>
+                            <input type="password" name="password" id="password" class="logininputfield" /><br>
+                            <input type="button" class="btn btn-primary text-center" value="Login" id="submit" onclick="validate()" />
+                        </form>
+                        <p class="helptext">If the password dosen´t work contact the admin<a href="#landingpage" class="herebutton"
+                                data-transition="pop"> here</a></p>
+                    </div>
                 </div>
             </div>
-                <!-- /header -->
-            
-                <div data-role="content" >	
-                        <div class="container login">
-                                <div class="container text-center">
-                                        
-                                        <div class="main"><br><br><br>
-                                            <form id="form_id" method="post" name="myform">
-                                                <label class="enter-pass">Enter password below</label><br>
-                                                <input type="password" name="password" id="password"  class="logininputfield" /><br>
-                                                <input type="button" class="btn btn-primary text-center" value="Login" id="submit" onclick="validate()" />
-                                            </form>
-                                            <p class="helptext">If the password dosen´t work contact the admin<a href="#two" class="herebutton" data-transition="pop"> here</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                </div><!-- /content -->
+        </div>
+    </div><!-- /content -->
+
+
+    <!-- /landingpage -->
+    <div data-role="page" id="landingpage">
+
+        <div data-role="content">
+
+         
+            <h2 class="text-center" >Menu</h2>
+                <a href="#tour" data-transition="flip">
+              
+                    <img src=".\images\b12.png" class="img-fluid mb-2 rounded" alt="Responsive image">
+                </a>
                 
-                
-            </div><!-- /page one -->
-            
-            
-            <!-- Start of second page: #two -->
-            <div data-role="page" id="two" data-theme="a">
-                <div data-role="header">
-                        <div class="jumbotron">
-                                <a href="#one"  data-transition="flip">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                  </a>
-                            </div>
-                </div><!-- /header -->
-            
-                <div data-role="content" data-theme="a">
-                    
-<!-- Card1 -->
-   <!-- Card1 -->
-   <a href="">
-        <div class="container">
-            <div data-aos="fade-up" data-aos-duration="1000">
-            <div class="card card-transparent" >
-                <img class="card-img-top" src=".\images\b12.png" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Start Nørreport station.</p>
-                    <p class="card-text-two">This is the S-station where you should start your tour.</p>
-                </div>
-              </div></div></a>
+                <a href="#map" data-transition="flip">
+                    <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
+                </a>
+              
+                <a href="#info" data-transition="flip">
+                    <img src=".\images\b12.png" alt="" class="img-fluid mb-2 rounded" alt="Responsive image">
+                </a>
+            </div>
+    </div>
     
-              <!-- Card2 -->
-       <a href="des1.html">
-          
-              <div data-aos="fade-up" data-aos-duration="1500">
-              <div class="card card-transparent" >
-                  <img class="card-img-top" src=".\images\b13.png" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">1 The Inner Universe.</p>
-                      <p class="card-text-two">Exhibition Here the first meditations were guided by Lama Ole and Hannah.</p>
-                      
-                  </div>
-                </div></div></a>
-    
-                <!-- Card3 -->
-       <a href="des2.html">
-          
-          <div data-aos="fade-up" data-aos-duration="1000">
-          <div class="card card-transparent" >
-              <img class="card-img-top" src=".\images\b12.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">2 The first Buddhist Center.</p>
-                  <p class="card-text-two">From 1973 to 1975 in the basement of the building the first buddhist center was located.</p>
-              </div>
-            </div></div></a>
-    
-            <!-- Card4 -->
-       <a href="des3.html">
-          
-          <div data-aos="fade-up" data-aos-duration="1000">
-          <div class="card card-transparent" >
-              <img class="card-img-top" src=".\images\b12.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">3 Academic Danish Boxing Club.</p>
-                  <p class="card-text-two">Lama Ole used to come here regularly to box for 4 years during his university days.</p>
-                  
-              </div>
-            </div></div></a>
-                    <h2>Two</h2>
-                    <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-                    <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
-                    <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>
+ 
+
+    <!-- Start of second page: tour -->
+    <div data-role="page" id="tour" data-theme="a">
+        <div data-role="header">
+            <div class="jumbotron">
+                <a href="#one" data-transition="flip">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div><!-- /header -->
 
 
-                    <p><a href="#two" data-role="button">Show page "two"</a></p>	
-                    <p><a href="#popup"data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p>	
-                    
-                </div><!-- /content -->
-                
-                <div data-role="footer">
-                    <h4>Page Footer</h4>
-                </div><!-- /footer -->
-            </div><!-- /page two -->
+        <div data-role="content" data-theme="a">
 
 
-             <!-- Start of second page: #tree -->
-             <div data-role="page" id="tree" data-theme="a">
-            
-                    <div data-role="header">
-                        <h1>tree</h1>
-                    </div><!-- /header -->
-                
-                    <div data-role="content" data-theme="a">	
-                        <h2>tree</h2>
-                        <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-                        <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
-                        <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>	
-                        
-                    </div><!-- /content -->
-                    
-                    <div data-role="footer">
-                        <h4>Page Footer</h4>
-                    </div><!-- /footer -->
-                </div><!-- /page tree -->
-            
-        
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page tour finish -->
 
 
-            
-            <!-- Start of third page: #popup -->
-            <div data-role="page" id="popup">
-            
-                <div data-role="header" data-theme="e">
-                    <h1>Dialog</h1>
-                </div><!-- /header -->
-            
-                <div data-role="content" data-theme="d">	
-                    <h2>Popup</h2>
-                    <p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
-                    <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
-                </div><!-- /content -->
-                
-                <div data-role="footer">
-                    <h4>Page Footer</h4>
-                </div><!-- /footer -->
-            </div><!-- /page popup -->
-            
+    <!-- Start of second page: map -->
+    <div data-role="page" id="map" data-theme="a">
+        <div data-role="header">
+            <div class="jumbotron">
+                <a href="#one" data-transition="flip">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+        </div><!-- /header -->
+
+
+        <div data-role="content" data-theme="a">
+            <!-- /map will go here -->
+           <p>here will be a map</p> 
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page mapfinish-->
+
+<!-- Start of second page: #info -->
+<div data-role="page" id="info" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page info finish -->
+
+
+<!-- Start of second page: #poi -->
+<div data-role="page" id="poi" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page info poi -->
+
+
+
+!-- Start of second page: #info -->
+<div data-role="page" id="info" data-theme="a">
+    <div data-role="header">
+        <div class="jumbotron">
+            <a href="#one" data-transition="flip">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+    </div><!-- /header -->
+
+
+    <div data-role="content" data-theme="a">
+
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page two -->
+
+
+
+    <!-- Start of second page: #tree -->
+    <div data-role="page" id="tree" data-theme="a">
+
+        <div data-role="header">
+            <h1>tree</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" data-theme="a">
+            <h2>tree</h2>
+            <p>I have an id of "two" on my page container. I'm the second page container in this multi-page
+                template.</p>
+            <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code>
+                swatch assigments here to show off how flexible it is. You can add any content or widget to
+                these pages, but we're keeping these simple.</p>
+            <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page tree -->
+
+
+
+
+
+    <!-- Start of third page: #popup -->
+    <div data-role="page" id="popup">
+
+        <div data-role="header" data-theme="e">
+            <h1>Dialog</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" data-theme="d">
+            <h2>Popup</h2>
+            <p>I have an id of "popup" on my page container and only look like a dialog because the link to me
+                had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code>
+                attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+            <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to
+                    page "one"</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page popup -->
+
 
 
 
 </body>
-<script>
-        AOS.init();
-      </script>
+
+
 </html>

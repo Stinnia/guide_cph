@@ -68,8 +68,9 @@
 .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset{
 	border: none !important;
 	border-bottom: 2px solid #d1232a !important;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+	background: none !important;
 	text-shadow: none !important;
+	box-shadow: none !important;
 	
 }
 
@@ -113,11 +114,16 @@
 .card{
 	font-family: 'Open Sans', sans-serif;
 	border: none;
-	background: transparent; 
 	color: black;
-
-	
+	text-shadow: none !important;
 	}
+/* landing-page: */
+	.landing-img{
+		margin-top: 20%; 
+	}
+ .ui-page.ui-page-theme-a.ui-page-active{
+	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+ }
 
 
 }
