@@ -31,13 +31,13 @@
              var adress = childSnap.child("adress").val();
              var infoFull = childSnap.child("info-full").val();
              var imgLink = childSnap.child("img-link").val();
-             statusHTML += '<div data-role="page" id="' + id + '" data-theme="a"><div data-role="content" data-theme="a">';
+             statusHTML += '<div data-role="page" data-transition="slideup" id="' + id + '" data-theme="a"><div data-role="ui-content" data-theme="a">';
              statusHTML += '<img class="card-img-top" src="' + imgLink + '" alt=\"' + title + '\"><div class="card-body">';
              statusHTML += '<h2>';
              statusHTML += title;
              statusHTML += '</h2>';
              statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
-             statusHTML += '<p class="adress">' + adress + '</p>';
+             statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
              statusHTML += '</div></div></div>';
          }); // end of foreach
          $('body').append(statusHTML); //inserting ready HTML code into body
