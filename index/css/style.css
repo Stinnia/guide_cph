@@ -87,7 +87,7 @@ a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all{
 	background: none !important;
 	text-shadow: none !important;
 	box-shadow: none !important;
-	color: #d1232a;
+	border: none !important;
 
 }
 
@@ -142,22 +142,22 @@ a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all{
 
 	.glyphicon.glyphicon-align-justify{
 		font-size: 200%;
-		color: rgb(107, 106, 106);
+		color: rgb(199, 70, 70);
 	}
 
 
 	.glyphicon.glyphicon-map-marker{
-		color: rgb(107, 106, 106);
+		color: rgb(199, 70, 70);
 		font-size: 200%;
 	}
 	.glyphicon.glyphicon-option-horizontal{
 		font-size: 200%;
-		color: rgb(107, 106, 106);
+		color: rgb(199, 70, 70);
 		
 	}
 	.glyphicon.glyphicon-info-sign{
 		font-size: 200%;
-		color: rgb(107, 106, 106);
+		color: rgb(199, 70, 70);
 	}
 	
 
