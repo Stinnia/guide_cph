@@ -82,6 +82,16 @@
 	border-color: #C58D1E !important;
 	text-shadow: none !important;
 }
+
+a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all{
+	background: none !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	color: #d1232a;
+
+}
+
+
 .helptext{
 	margin-top: 50%;
 }
@@ -98,10 +108,12 @@
 	text-shadow: none !important;
 }
 .glyphicon.glyphicon-chevron-left{
-	color: black;
+	color: rgb(107, 106, 106);
 	font-size: 200%;
-
+	
 }
+
+
 .jumbotron{
 	background: transparent; 
 	height: 30px;
@@ -118,21 +130,36 @@
 	text-shadow: none !important;
 	}
 /* landing-page: */
-	.landing-img{
-		margin-top: 20%; 
-	}
+	
  .ui-page.ui-page-theme-a.ui-page-active{
 	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
  }
- .header{
-	font-size: 30px;
-}
+ 
+ 
 
 
  /* menu: */
-.menu{
 
-}
+	.glyphicon.glyphicon-align-justify{
+		font-size: 200%;
+		color: rgb(107, 106, 106);
+	}
+
+
+	.glyphicon.glyphicon-map-marker{
+		color: rgb(107, 106, 106);
+		font-size: 200%;
+	}
+	.glyphicon.glyphicon-option-horizontal{
+		font-size: 200%;
+		color: rgb(107, 106, 106);
+		
+	}
+	.glyphicon.glyphicon-info-sign{
+		font-size: 200%;
+		color: rgb(107, 106, 106);
+	}
+	
 
 }
 
