@@ -39,7 +39,9 @@
              statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
              statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
              statusHTML += '</div></div></div>';
+            
          }); // end of foreach
          $('body').append(statusHTML); //inserting ready HTML code into body
+         
      });
  }); //end ready
