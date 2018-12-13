@@ -23,6 +23,23 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- adding Firebase to the project -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCFehxZmR7Ml3f85kHhHlFrHQd0w19A46M",
+            authDomain: "guidecph-1543331288734.firebaseapp.com",
+            databaseURL: "https://guidecph-1543331288734.firebaseio.com",
+            projectId: "guidecph-1543331288734",
+            storageBucket: "guidecph-1543331288734.appspot.com",
+            messagingSenderId: "1025601520459"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <!-- Login script-->
     <script src="js/login.js"></script>
     <!-- Our own scripts -->
