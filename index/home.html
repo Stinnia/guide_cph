@@ -40,9 +40,6 @@
         firebase.initializeApp(config);
     </script>
 
-    <!-- Login script-->
-    <script src="js/login.js"></script>
-
 
 </head>
 
@@ -132,7 +129,7 @@
         <!-- /header -->
 
         <div data-role="content" data-theme="a">
-            <!-- /map will go here -->
+            <div id="googlemap" class="googlemap"></div>
         </div>
         <!-- /content -->
 
@@ -219,7 +216,9 @@
     <!-- Our own scripts -->
     <script src="js/data_from_FB.js"></script>
 
-
+    <script src="js/google_map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxmSWTJ74578eRmgbDaPT0qF7ld0eIIes&callback=getLocation">
+    </script>
 
 
 </body>

@@ -9,10 +9,11 @@
          var statusHTML = '<!-- list of POIs  -->';
          snapshot.forEach(function(childSnap) {
              var id = childSnap.key;
+             var imgLink = childSnap.child("img-link").val();
              var title = childSnap.child("title").val();
              var infoShort = childSnap.child("info-short").val();
              statusHTML += '<a href=\"#' + id + '\"><div data-aos="fade-up" data-aos-duration="1500"><div class="card mb-2">';
-             statusHTML += '<img class="card-img-top" src="images/b13.png" alt=\"' + title + '\"><div class="card-body">';
+             statusHTML += '<img class="card-img-top" src="' + imgLink + '" alt=\"' + title + '\"><div class="card-body">';
              statusHTML += '<p class "card-title">';
              statusHTML += title;
              statusHTML += '</p>';
