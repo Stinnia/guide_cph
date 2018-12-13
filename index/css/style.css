@@ -1,212 +1,186 @@
 @charset "utf-8";
+
 /* CSS Document */
-#one{
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-	text-shadow: none !important;
-	
-}
-.h2.text-center{
-	font-size: 1.7em;
-	margin-top: 10%;
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	text-shadow: none !important;
-	
-}
-.ui-header.ui-bar-inherit{
-	border: none;
-	background: transparent !important;
-}
-.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset{
-	border: none !important;
-	border-bottom: 2px solid #d1232a !important;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-	text-shadow: none !important;
-	
+
+#one {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+    text-shadow: none !important;
 }
 
-.ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
-	
-	color:black !important;
-	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E) !important;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
-	border-color: #C58D1E !important;
-	text-shadow: none !important;
+.h2.text-center {
+    font-size: 1.7em;
+    margin-top: 10%;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: none !important;
 }
-.helptext{
-	margin-top: 50%;
+
+.ui-header.ui-bar-inherit {
+    border: none;
+    background: transparent !important;
 }
-.herebutton.ui-link{
-	color: #d1232a
+
+.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+    border: none !important;
+    border-bottom: 2px solid #d1232a !important;
+    background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+    text-shadow: none !important;
 }
+
+.ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+    color: black !important;
+    background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E) !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+    border-color: #C58D1E !important;
+    text-shadow: none !important;
+}
+
+.helptext {
+    margin-top: 50%;
+}
+
+.herebutton.ui-link {
+    color: #d1232a
+}
+
 @media only screen and (max-width: 736px) {
-/* For mobile phones: */
-
-
-/* Front page: */
-#one{
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-	text-shadow: none !important;
-	
+    /* For mobile phones: */
+    /* Front page: */
+    #one {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+        text-shadow: none !important;
+    }
+    .h2.text-center {
+        font-size: 1.7em;
+        margin-top: 10%;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        text-shadow: none !important;
+    }
+    .ui-header.ui-bar-inherit {
+        border: none;
+        background: transparent !important;
+    }
+    .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+        border: none !important;
+        border-bottom: 2px solid #d1232a !important;
+        background: none !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+        color: black !important;
+        background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E) !important;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+        border-color: #C58D1E !important;
+        text-shadow: none !important;
+    }
+    a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all {
+        background: none !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+    /* landing page: */
+    .map {
+        background-color: white;
+        background-size: cover;
+        height: 195px;
+        align-content: center;
+    }
+    .col-sm.home.map {
+        padding-top: 20%;
+        padding-left: 20%;
+        font-size: 100%;
+    }
+    .attractions {
+        background-color: white;
+        background-size: cover;
+        height: 195px;
+        align-content: center;
+    }
+    .col-sm.home.attractions {
+        padding-top: 20%;
+        padding-left: 20%;
+        font-size: 100%;
+    }
+    .informations {
+        background-color: white;
+        background-size: cover;
+        height: 195px;
+        align-content: center;
+    }
+    .col-sm.home.informations {
+        padding-top: 20%;
+        padding-left: 20%;
+        font-size: 100%;
+    }
+    .ui-content-main {
+        padding: 0px;
+    }
+    .text1 {
+        font-size: 50%;
+        color: black;
+    }
+    .helptext {
+        margin-top: 50%;
+    }
+    .herebutton.ui-link {
+        color: #d1232a
+    }
+    /* google map: */
+    .googlemap {
+        height: 80vh;
+    }
+    /* distinations list page: */
+    #two {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+        text-shadow: none !important;
+    }
+    .glyphicon.glyphicon-chevron-left {
+        color: rgb(107, 106, 106);
+        font-size: 200%;
+    }
+    .jumbotron {
+        background: transparent;
+        height: 30px;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .ui-content.ui-body-a {
+        background: transparent;
+    }
+    .card {
+        font-family: 'Open Sans', sans-serif;
+        border: none;
+        color: black;
+        text-shadow: none !important;
+    }
+    /* landing-page: */
+    .ui-page.ui-page-theme-a.ui-page-active {
+        background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+    }
+    /* menu: */
+    .glyphicon.glyphicon-align-justify {
+        font-size: 200%;
+        color: rgb(199, 70, 70);
+    }
+    .glyphicon.glyphicon-map-marker {
+        color: rgb(199, 70, 70);
+        font-size: 200%;
+    }
+    .glyphicon.glyphicon-option-horizontal {
+        font-size: 200%;
+        color: rgb(199, 70, 70);
+    }
+    .glyphicon.glyphicon-info-sign {
+        font-size: 200%;
+        color: rgb(199, 70, 70);
+    }
 }
-.h2.text-center{
-	font-size: 1.7em;
-	margin-top: 10%;
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	text-shadow: none !important;
-	
-}
-.ui-header.ui-bar-inherit{
-	border: none;
-	background: transparent !important;
-}
-.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset{
-	border: none !important;
-	border-bottom: 2px solid #d1232a !important;
-	background: none !important;
-	text-shadow: none !important;
-	box-shadow: none !important;
-	
-}
-
-.ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
-	
-	color:black !important;
-	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E) !important;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
-	border-color: #C58D1E !important;
-	text-shadow: none !important;
-}
-
-a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all{
-	background: none !important;
-	text-shadow: none !important;
-	box-shadow: none !important;
-	border: none !important;
-
-}
-/* landing page: */
-
-.map {
-	background-color: white;
-	background-size: cover;
-	height: 195px;
-	align-content: center;
-	
-}
-.col-sm.home.map{
-	padding-top: 20%;
-	padding-left: 20%;
-	font-size: 100%;
-}
-.attractions {
-	background-color: white;
-	background-size: cover;
-	height: 195px;
-	align-content: center;
-	
-}
-.col-sm.home.attractions{
-	padding-top: 20%;
-	padding-left: 20%;
-	font-size: 100%;
-}
-.informations {
-	background-color: white;
-	background-size: cover;
-	height: 195px;
-	align-content: center;
-}
-.col-sm.home.informations{
-	padding-top: 20%;
-	padding-left: 20%;
-	font-size: 100%;
-}
-
-.ui-content-main{
-
-	padding:0px;
-}
-.text1{
-	font-size: 50%;
-	color: black;
-}
-
-
-
-.helptext{
-	margin-top: 50%;
-}
-.herebutton.ui-link{
-	color: #d1232a
-}
-
-/* distinations list page: */
-
-#two{
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-	text-shadow: none !important;
-}
-.glyphicon.glyphicon-chevron-left{
-	color: rgb(107, 106, 106);
-	font-size: 200%;
-	
-}
-
-
-.jumbotron{
-	background: transparent; 
-	height: 30px;
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-}
-.ui-content.ui-body-a{
-	background: transparent;
-}
-.card{
-	font-family: 'Open Sans', sans-serif;
-	border: none;
-	color: black;
-	text-shadow: none !important;
-	}
-/* landing-page: */
-	
- .ui-page.ui-page-theme-a.ui-page-active{
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
- }
- 
- 
-
-
- /* menu: */
-
-	.glyphicon.glyphicon-align-justify{
-		font-size: 200%;
-		color: rgb(199, 70, 70);
-	}
-
-
-	.glyphicon.glyphicon-map-marker{
-		color: rgb(199, 70, 70);
-		font-size: 200%;
-	}
-	.glyphicon.glyphicon-option-horizontal{
-		font-size: 200%;
-		color: rgb(199, 70, 70);
-		
-	}
-	.glyphicon.glyphicon-info-sign{
-		font-size: 200%;
-		color: rgb(199, 70, 70);
-	}
-	
-
-}
-
