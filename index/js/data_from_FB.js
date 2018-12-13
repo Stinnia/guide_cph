@@ -14,9 +14,9 @@
              var infoShort = childSnap.child("info-short").val();
              statusHTML += '<a href=\"#' + id + '\"><div data-aos="fade-up" data-aos-duration="1500"><div class="card mb-2">';
              statusHTML += '<img class="card-img-top" src="' + imgLink + '" alt=\"' + title + '\"><div class="card-body">';
-             statusHTML += '<p class "card-title">';
+             statusHTML += '<h4>';
              statusHTML += title;
-             statusHTML += '</p>';
+             statusHTML += '</h4>';
              statusHTML += '<p class="card-text-two">' + infoShort + '</p>';
              statusHTML += '</div></div></div></a>';
          }); // end of foreach
@@ -27,22 +27,38 @@
      database.ref('places/').on('value', function(snapshot) {
          var statusHTML = '<!-- Start of pages with POIs -->';
          //  var navbar = '(index/navbar.html)'.val();
-         var menu = [
-             '<div data-role="footer" data-position="fixed" class="menu">',
-             '<div data-role="navbar">',
-             '<ul><li><a href="#map" data-transition="fade"><div class="glyphicon glyphicon-map-marker"></div><br><br>MAP</a></li>',
-             '<li><a href="#tour" data-transition="fade"><div class="glyphicon glyphicon-align-justify"></div><br><br>TOUR</a></li>',
-             '<li><a href="#info" data-transition="fade"><div class="glyphicon glyphicon-info-sign"></div><br><br>INFO</a></li></ul>',
-             '</div><!-- /navbar --></div>'
-         ].join('');
+         var menu = `
+         <div data-role="footer" data-position="fixed" class="menu">
+             <div data-role="navbar">
+                 <ul>
+                     <li>
+                         <a href="#map" data-transition="fade">
+                             <div class="glyphicon glyphicon-map-marker"></div><br><br>MAP</a>
+                     </li>
+                     <li>
+                         <a href="#tour" data-transition="fade">
+                             <div class="glyphicon glyphicon-align-justify"></div><br><br>TOUR</a>
+                     </li>
+                     <li>
+                         <a href="#info" data-transition="fade">
+                             <div class="glyphicon glyphicon-info-sign"></div><br><br>INFO</a>
+                     </li>
+                 </ul>
+             </div>
+             <!-- /navbar -->
+         </div>`;
 
-         var navbar = [
-             '<div data-role="header">',
-             '<button onclick="goBack()" data-transition="flip">',
-             '<span class="glyphicon glyphicon-chevron-left"></span>',
-             '</button>',
-             '</div><!-- /header -->'
-         ].join('');
+         var navbar = `
+         <div data-role="header">
+            <button onclick="goBack()" data-transition="flip">
+
+           <span class="glyphicon glyphicon-chevron-left"></span>
+
+          </button>
+          </div>
+          <!-- /header -->
+         `;
+
 
          snapshot.forEach(function(childSnap) {
              var id = childSnap.key;
@@ -59,12 +75,12 @@
              statusHTML += '</h2>';
              statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
              statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
-             statusHTML += '</div></div>';
+             statusHTML += '</div><button>take me there</button></div>';
              statusHTML += menu;
              statusHTML += '</div>';
 
          }); // end of foreach
-         $('body').append(statusHTML); //inserting ready HTML code into body
+         $('#landingpage').after(statusHTML); //inserting ready HTML code into body
 
      });
  }); //end ready
