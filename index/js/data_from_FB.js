@@ -26,7 +26,7 @@
      database.ref('places/').on('value', function(snapshot) {
          var statusHTML = '<!-- Start of pages with POIs -->';
          //  var navbar = '(index/navbar.html)'.val();
-         var navbar = [
+         var menu = [
              '<div data-role="footer" data-position="fixed" class="menu">',
              '<div data-role="navbar">',
              '<ul><li><a href="#map" data-transition="fade"><div class="glyphicon glyphicon-map-marker"></div><br><br>MAP</a></li>',
@@ -35,13 +35,23 @@
              '</div><!-- /navbar --></div>'
          ].join('');
 
+         var navbar = [
+             '<div data-role="header">',
+             '<button onclick="goBack()" data-transition="flip">',
+             '<span class="glyphicon glyphicon-chevron-left"></span>',
+             '</button>',
+             '</div><!-- /header -->'
+         ].join('');
+
          snapshot.forEach(function(childSnap) {
              var id = childSnap.key;
              var title = childSnap.child("title").val();
              var adress = childSnap.child("adress").val();
              var infoFull = childSnap.child("info-full").val();
              var imgLink = childSnap.child("img-link").val();
-             statusHTML += '<div data-role="page" data-transition="slideup" id="' + id + '" data-theme="a"><div data-role="ui-content" data-theme="a">';
+             statusHTML += '<div data-role="page" data-transition="slideup" id="' + id + '" data-theme="a">';
+             statusHTML += navbar;
+             statusHTML += '<div data-role = "ui-content" data-theme = "a">';
              statusHTML += '<img class="card-img-top" src="' + imgLink + '" alt=\"' + title + '\"><div class="card-body">';
              statusHTML += '<h2>';
              statusHTML += title;
@@ -49,7 +59,7 @@
              statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
              statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
              statusHTML += '</div></div>';
-             statusHTML += navbar;
+             statusHTML += menu;
              statusHTML += '</div>';
 
          }); // end of foreach
@@ -57,3 +67,8 @@
 
      });
  }); //end ready
+
+ // sedning navigation back to previous page
+ function goBack() {
+     window.history.back();
+ }
