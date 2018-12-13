@@ -24,7 +24,7 @@ function geoSuccess(position) {
     var mapProp = {
         center: myLatLng,
         // mapTypeId: google.maps.MapTypeId.ROADMAP,// puts your current location at the centre of the map,
-        zoom: 13,
+        zoom: 15,
         center: { lat: 55.6834142, lng: 12.5717939 },
         mapTypeId: 'roadmap',
         gestureHandling: "greedy",
