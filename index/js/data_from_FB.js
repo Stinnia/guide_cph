@@ -38,12 +38,10 @@
              statusHTML += '</h2>';
              statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
              statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
-             statusHTML += '<a href="#map" data-transition="fade"><div class="glyphicon glyphicon-map-marker"></div><br><br>MAP</a>';
-             statusHTML += '</div></div>';
-             statusHTML += '</div>';
-             console.log(statusHTML);
+             statusHTML += '</div></div></div>';
 
          }); // end of foreach
          $('body').append(statusHTML); //inserting ready HTML code into body
+
      });
  }); //end ready
