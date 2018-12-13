@@ -59,7 +59,7 @@
              statusHTML += '</h2>';
              statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
              statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
-             statusHTML += '</div></div>';
+             statusHTML += '</div><button>take me there</button></div>';
              statusHTML += menu;
              statusHTML += '</div>';
 
