@@ -90,6 +90,26 @@ a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all{
 	border: none !important;
 
 }
+/* landing page: */
+
+.map {
+	background-image: url(/index/images/b12.png);
+	background-size: cover;
+	height: 150px;
+	
+}
+.attractions {
+	background-image: url(/index/images/b12.png);
+	background-size: cover;
+	height: 150px;
+	margin-top: 9%;
+}
+.informations {
+	background-image: url(/index/images/b12.png);
+	background-size: cover;
+	height: 150px;
+}
+
 
 
 .helptext{
