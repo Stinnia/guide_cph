@@ -25,6 +25,16 @@
      // reading from DB and creating POIS
      database.ref('places/').on('value', function(snapshot) {
          var statusHTML = '<!-- Start of pages with POIs -->';
+         //  var navbar = '(index/navbar.html)'.val();
+         var navbar = [
+             '<div data-role="footer" data-position="fixed" class="menu">',
+             '<div data-role="navbar">',
+             '<ul><li><a href="#map" data-transition="fade"><div class="glyphicon glyphicon-map-marker"></div><br><br>MAP</a></li>',
+             '<li><a href="#tour" data-transition="fade"><div class="glyphicon glyphicon-align-justify"></div><br><br>TOUR</a></li>',
+             '<li><a href="#info" data-transition="fade"><div class="glyphicon glyphicon-info-sign"></div><br><br>INFO</a></li></ul>',
+             '</div><!-- /navbar --></div>'
+         ].join('');
+
          snapshot.forEach(function(childSnap) {
              var id = childSnap.key;
              var title = childSnap.child("title").val();
@@ -38,8 +48,12 @@
              statusHTML += '</h2>';
              statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
              statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
-             statusHTML += '</div></div></div>';
+             statusHTML += '</div></div>';
+             statusHTML += navbar;
+             statusHTML += '</div>';
+
          }); // end of foreach
          $('body').append(statusHTML); //inserting ready HTML code into body
+
      });
  }); //end ready

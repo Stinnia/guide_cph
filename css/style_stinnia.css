@@ -47,6 +47,7 @@ html, body {
 .map {
 	background-image: url(../images/map.png);
 	background-size: cover;
+	height: 100px;
 }
 .attractions {
 	background-image: url(../images/attractions.png);
