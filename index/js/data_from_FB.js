@@ -78,10 +78,9 @@
              statusHTML += '</div><button>take me there</button></div>';
              statusHTML += menu;
              statusHTML += '</div>';
-             console.log(statusHTML);
 
          }); // end of foreach
-         $('#tour').after(statusHTML); //inserting ready HTML code into body
+         $('#landingpage').after(statusHTML); //inserting ready HTML code into body
 
      });
  }); //end ready
