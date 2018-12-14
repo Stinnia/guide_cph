@@ -12,13 +12,13 @@
              var imgLink = childSnap.child("img-link").val();
              var title = childSnap.child("title").val();
              var infoShort = childSnap.child("info-short").val();
-             statusHTML += '<a href=\"#' + id + '\"><div data-aos="fade-up" data-aos-duration="1500"><div class="card mb-2">';
-             statusHTML += '<img class="card-img-top" src="' + imgLink + '" alt=\"' + title + '\"><div class="card-body">';
-             statusHTML += '<h4>';
+             statusHTML += '<a href=\"#' + id + '\"><div data-aos="fade-up" data-aos-duration="1500"><div class="border card">';
+             statusHTML += '<div class="card-body"><img class="card-img-top mr-2" src="' + imgLink + '" alt=\"' + title + '\">';
+             statusHTML += '<h4 class="pt-2">';
              statusHTML += title;
              statusHTML += '</h4>';
-             statusHTML += '<p class="card-text-two">' + infoShort + '</p>';
-             statusHTML += '</div></div></div></a>';
+             statusHTML += '<p class="card-text-two pr-1">' + infoShort + '</p>';
+             statusHTML += '</div></div></div></a><br>';
          }); // end of foreach
          $('#PoiList').html(statusHTML); //sending info to the card
      }); //end read
@@ -28,7 +28,7 @@
          var statusHTML = '<!-- Start of pages with POIs -->';
          //  var navbar = '(index/navbar.html)'.val();
          var menu = `
-         <div data-role="footer" data-position="fixed" class="menu">
+         <div data-role="footer" data-position="fixed" class="menu fixed-bottom">
              <div data-role="navbar">
                  <ul>
                      <li>
@@ -69,13 +69,13 @@
              statusHTML += '<div data-role="page" data-transition="slideup" id="' + id + '" data-theme="a">';
              statusHTML += navbar;
              statusHTML += '<div data-role = "ui-content" data-theme = "a">';
-             statusHTML += '<img class="card-img-top" src="' + imgLink + '" alt=\"' + title + '\"><div class="card-body">';
-             statusHTML += '<h2>';
+             statusHTML += '<img class="card-img-top-info" src="' + imgLink + '" alt=\"' + title + '\"><div class="card-body">';
+             statusHTML += '<h2 class="ml-3 mr-3">';
              statusHTML += title;
              statusHTML += '</h2>';
-             statusHTML += '<p class="card-text-two">' + infoFull + '</p></br>';
-             statusHTML += '<p class="adress font-italic">Adress: </br>' + adress + '</p>';
-             statusHTML += '</div><button>take me there</button></div>';
+             statusHTML += '<p class="card-text-two-tour ml-3 mr-3">' + infoFull + '</p></br>';
+             statusHTML += '<p class="adress font-italic ml-3 mr-3">Adress: </br>' + adress + '</p>';
+             statusHTML += '</div><button class="take-me"><a href="#map">Go to map</a></button></div>';
              statusHTML += menu;
              statusHTML += '</div>';
              console.log(statusHTML);

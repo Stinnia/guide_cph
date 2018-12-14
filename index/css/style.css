@@ -1,10 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-
+body {
+	max-width: 600px;
+}
 #one {
 	color: black;
 	font-family: 'Open Sans', sans-serif;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+	background-image: linear-gradient(to bottom right, #EB272F, #D1232A);
 	text-shadow: none !important;
 }
 .h2.text-center {
@@ -14,35 +16,30 @@
 	font-family: 'Open Sans', sans-serif;
 	text-shadow: none !important;
 }
-.ui-header.ui-bar-inherit {
-	border: none;
-	background: transparent !important;
+.border-danger {
+	border-color: #D1232A!important;
 }
-.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
-	border: none !important;
-	border-bottom: 2px solid #d1232a !important;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-	text-shadow: none !important;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #D1232A;
+    margin: 1em 0;
+    padding: 0; 
 }
-.ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
-	color: black !important;
-	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E) !important;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-	border-color: #C58D1E !important;
-	text-shadow: none !important;
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ color: white;
+ text-align: center;
+ opacity: 1; /* Firefox */
 }
 
-@media only screen and (max-width: 736px) {
-/* For mobile phones: */
-    /* Front page: */
-#one {
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	background-image: linear-gradient(to bottom right, #D1232A, #D1232A);
-	text-shadow: none !important;
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+ text-align: center;
 }
-.img-fluid {
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+ text-align: center;
 }
 .ui-header.ui-bar-inherit {
 	border: none;
@@ -69,50 +66,93 @@ a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all {
 	border: none !important;
 	color: #D1232A;
 }
-	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
- color: white;
- text-align: center;
- opacity: 1; /* Firefox */
+/* Google map */
+.googlemap {
+	height: 74vh;
+}
+/* menu: */
+.glyphicon.glyphicon-align-justify {
+	font-size: 4vh;
+	color: #D1232A;
+}
+.glyphicon.glyphicon-map-marker {
+	color: #D1232A;
+	font-size: 4vh;
+}
+.glyphicon.glyphicon-option-horizontal {
+	font-size: 4vh;
+	color: #D1232A;
+}
+.glyphicon.glyphicon-info-sign {
+	font-size: 4vh;
+	color: #D1232A;
+}
+.card-body {
+	margin: 0;
+	padding: 0;
+}
+.card-img-top {
+	width: 20vh;
+	float: left;
+}
+.card-img-top-info {
+	width: 100%;
+	float: left;
+	margin-bottom: 2vh;
+}
+div.border {
+	height: 13vh;
+}
+.h2.text-center {
+	font-size: 4vh;
+	}
+h4 {
+	font-size: 2.3vh;
+}
+.h6 {
+	font-size: 0.8em;
+}
+.card-text-two {
+	font-size: 1.8vh;
+}
+.card-text-two-tour {
+	font-size: 2.5vh;
+}
+.card {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}
+.take-me {
+	width: 80%!important;
+	margin: 5vh auto!important;
+	background-image: none !important;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+	border-color: none !important;
+	text-shadow: none !important;
+}
+a.ui-link {
+	color: black;
+}
+@media only screen and (max-width: 736px) {
+/* For mobile phones: */
+    /* Front page: */
+.img-fluid {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}	
+
+.fixed-bottom {
+	font-size: 2vh;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: white;
- text-align: center;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
- color: white;
- text-align: center;
-}
-	.h6 {
-		font-size: 0.8em;
-	}
-/* landing page: */
-.map {
-	background-image: url(../images/map.png);
-	background-size: cover;
-	height: 150px;
-}
-.attractions {
-	background-image: url(../images/attractions.png);
-	background-size: cover;
-	height: 150px;
-	margin-top: 9%;
-}
-.informations {
-	background-image: url(../images/informations.png);
-	background-size: cover;
-	height: 150px;
-}
 /* distinations list page: */
 #two {
 	color: black;
 	font-family: 'Open Sans', sans-serif;
-	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+	background-image: linear-gradient(to bottom right, #F6F6F6, #F6F6F6);
 	text-shadow: none !important;
 }
 .glyphicon.glyphicon-chevron-left {
 	color: rgb(107, 106, 106);
-	font-size: 200%;
+	font-size: 2vh;
 }
 .jumbotron {
 	background: transparent;
@@ -129,164 +169,4 @@ a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all {
 	color: black;
 	text-shadow: none !important;
 }
-/* Google map */
-.googlemap {
-	height: 75vh;
-}
-/* menu: */
-.glyphicon.glyphicon-align-justify {
-	font-size: 200%;
-	color: rgb(199, 70, 70);
-}
-.glyphicon.glyphicon-map-marker {
-	color: rgb(199, 70, 70);
-	font-size: 200%;
-}
-.glyphicon.glyphicon-option-horizontal {
-	font-size: 200%;
-	color: rgb(199, 70, 70);
-}
-.glyphicon.glyphicon-info-sign {
-	font-size: 200%;
-	color: rgb(199, 70, 70);
-}
-}
-@media only screen and (max-width: 736px) {
-    /* For mobile phones: */
-    /* Front page: */
-    #one {
-        color: black;
-        font-family: 'Open Sans', sans-serif;
-        background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-        text-shadow: none !important;
-    }
-    .h2.text-center {
-        font-size: 1.7em;
-        margin-top: 10%;
-        color: black;
-        font-family: 'Open Sans', sans-serif;
-        text-shadow: none !important;
-    }
-    .ui-header.ui-bar-inherit {
-        border: none;
-        background: transparent !important;
-    }
-    .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
-        border: none !important;
-        border-bottom: 2px solid #d1232a !important;
-        background: none !important;
-        text-shadow: none !important;
-        box-shadow: none !important;
-    }
-    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
-        color: black !important;
-        background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E) !important;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-        border-color: #C58D1E !important;
-        text-shadow: none !important;
-    }
-    a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all {
-        background: none !important;
-        text-shadow: none !important;
-        box-shadow: none !important;
-        border: none !important;
-    }
-    /* landing page: */
-    .map {
-        background-color: white;
-        background-size: cover;
-        height: 195px;
-        align-content: center;
-    }
-    .col-sm.home.map {
-        padding-top: 20%;
-        padding-left: 20%;
-        font-size: 100%;
-    }
-    .attractions {
-        background-color: white;
-        background-size: cover;
-        height: 195px;
-        align-content: center;
-    }
-    .col-sm.home.attractions {
-        padding-top: 20%;
-        padding-left: 20%;
-        font-size: 100%;
-    }
-    .informations {
-        background-color: white;
-        background-size: cover;
-        height: 195px;
-        align-content: center;
-    }
-    .col-sm.home.informations {
-        padding-top: 20%;
-        padding-left: 20%;
-        font-size: 100%;
-    }
-    .ui-content-main {
-        padding: 0px;
-    }
-    .text1 {
-        font-size: 50%;
-        color: black;
-    }
-    .helptext {
-        margin-top: 50%;
-    }
-    .herebutton.ui-link {
-        color: #d1232a
-    }
-    /* google map: */
-    .googlemap {
-        height: 80vh;
-    }
-    /* distinations list page: */
-    #two {
-        color: black;
-        font-family: 'Open Sans', sans-serif;
-        background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-        text-shadow: none !important;
-    }
-    .glyphicon.glyphicon-chevron-left {
-        color: rgb(107, 106, 106);
-        font-size: 200%;
-    }
-    .jumbotron {
-        background: transparent;
-        height: 30px;
-        color: black;
-        font-family: 'Open Sans', sans-serif;
-    }
-    .ui-content.ui-body-a {
-        background: transparent;
-    }
-    .card {
-        font-family: 'Open Sans', sans-serif;
-        border: none;
-        color: black;
-        text-shadow: none !important;
-    }
-    /* landing-page: */
-    .ui-page.ui-page-theme-a.ui-page-active {
-        background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
-    }
-    /* menu: */
-    .glyphicon.glyphicon-align-justify {
-        font-size: 200%;
-        color: rgb(199, 70, 70);
-    }
-    .glyphicon.glyphicon-map-marker {
-        color: rgb(199, 70, 70);
-        font-size: 200%;
-    }
-    .glyphicon.glyphicon-option-horizontal {
-        font-size: 200%;
-        color: rgb(199, 70, 70);
-    }
-    .glyphicon.glyphicon-info-sign {
-        font-size: 200%;
-        color: rgb(199, 70, 70);
-    }
 }
