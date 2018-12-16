@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Khula', Verdana, 'Open Sans' sans-serif;
+}
+[data-role=page] {
+	height: 100% !important;
+	position: relative !important;
+}
+[data-role=footer] {
+	bottom: 0;
+	position: absolute !important;
+	top: auto !important;
+	width: 100%;
+}
+.login {
+	height: 736px;
+	background-color: red;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+	height: 90vh;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 90%;
+	margin: 0;
+	padding: 0;
+}
+.home {
+	color: black;
+	font-family: 'Khula', sans-serif;
+	font-size: 2.5em;
+	width: 314px;
+	height: 200px;
+	display: inline-block;
+	margin: 20px;
+}
+.map {
+	background-image: url(../images/map.png);
+	background-size: cover;
+	height: 100px;
+}
+.attractions {
+	background-image: url(../images/attractions.png);
+	background-size: cover;
+}
+.informations {
+	background-image: url(../images/informations.png);
+	background-size: cover;
+}
+
+@media only screen and (max-width: 736px) {
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+	.ui-content {
+		padding: 0;
+		margin: 0;
+	-webkit-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	-moz-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	}
+.ui-mobile {
+	background-color: #D1232A;
+}
+.container {
+	background-color: #D1232A;
+	height: 100vh;
+	font-family: 'Amatic SC', cursive;
+}
+.nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.home {
+	height: 28.3vh;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding-top: 19%;
+}
+}
+@media only screen and (max-width: 320px) {
+	.h5 {
+		font-size: 17px!important;
+	}	
+}

@@ -1,221 +1,270 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 /* CSS Document */
-
 body {
-    max-width: 600px;
-    font-family: 'Lato', sans-serif;
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	
+	
+	background-color: #d1232a;
 }
-
-a {
-    text-decoration: none;
+[data-role=page] {
+	height: 100% !important;
+	position: relative !important;
 }
-
-#one {
-    color: black;
-    /* font-family: 'Open Sans', sans-serif; */
-    background-image: linear-gradient(to bottom right, #EB272F, #D1232A);
-    text-shadow: none !important;
+[data-role=footer] {
+	bottom: 0;
+	position: absolute !important;
+	top: auto !important;
+	width: 100%;
 }
+.login {
+	padding-top:20%;
 
-.h2.text-center {
-    font-size: 1.7em;
-    margin-top: 10%;
-    color: black;
-    /* font-family: 'Open Sans', sans-serif; */
-    text-shadow: none !important;
+	height: 736px;
+	background-color: red;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-
-.border-danger {
-    border-color: #D1232A!important;
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+	height: 85%;
 }
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #D1232A;
-    margin: 1em 0;
-    padding: 0;
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 90%;
+	margin: 0;
+	padding: 0;
 }
-
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    text-align: center;
-    opacity: 1;
-    /* Firefox */
+/* Change the color of the default theme */ 
+.ui-bar-a {
 }
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: white;
-    text-align: center;
+.ui-btn-up-a {
 }
+.home {
+	color: black;
 
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
-    text-align: center;
+	font-size: 3em;
+	width: 314px;
+	height: 200px;
+	display: inline-block;
+	margin: 20px;
 }
-
-.ui-header.ui-bar-inherit {
-    border: none;
-    background: transparent !important;
+.map {
+	background-image: url(../images/map.png);
+	background-size: cover;
 }
-
-.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
-    border: none !important;
-    border-bottom: 2px solid white !important;
-    background: none !important;
-    text-shadow: none !important;
-    box-shadow: none !important;
+.attractions {
+	background-image: url(../images/attractions.png);
+	background-size: cover;
 }
-
-.ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
-    color: black !important;
-    background-image: none !important;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-    border-color: none !important;
-    text-shadow: none !important;
-}
-
-a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all {
-    background: none !important;
-    text-shadow: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    color: #D1232A;
+.informations {
+	background-image: url(../images/informations.png);
+	background-size: cover;
 }
 
 
-/* Google map */
-
-.googlemap {
-    height: 74vh;
-}
 
 
-/* Intro text */
 
-.intro-text {
-    font-size: 0.7em;
-}
-
-
-/* menu: */
-
-.glyphicon.glyphicon-align-justify {
-    font-size: 4vh;
-    color: #D1232A;
-}
-
-.glyphicon.glyphicon-map-marker {
-    color: #D1232A;
-    font-size: 4vh;
-}
-
-.glyphicon.glyphicon-option-horizontal {
-    font-size: 4vh;
-    color: #D1232A;
-}
-
-.glyphicon.glyphicon-info-sign {
-    font-size: 4vh;
-    color: #D1232A;
-}
-
-.card-body {
-    margin: 0;
-    padding: 0;
-}
-
-.card-img-top {
-    width: 20vh;
-    float: left;
-}
-
-.card-img-top-info {
-    width: 100%;
-    float: left;
-    margin-bottom: 2vh;
-}
-
-div.border {
-    height: 13vh;
-}
-
-.h2.text-center {
-    font-size: 4vh;
-}
-
-h4 {
-    font-size: 0.7em;
-}
-
-.h6 {
-    font-size: 0.8em;
-}
-
-.card-text-two {
-    font-size: 0.7em;
-}
-
-.card-text-two-tour {
-    font-size: 2.5vh;
-}
-
-.card {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-}
-
-.take-me {
-    width: 80%!important;
-    margin: 5vh auto!important;
-    background-image: none !important;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-    border-color: none !important;
-    text-shadow: none !important;
-}
-
-a.ui-link {
-    color: black;
-}
 
 @media only screen and (max-width: 736px) {
-    /* For mobile phones: */
-    /* Front page: */
-    .img-fluid {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-    }
-    .fixed-bottom {
-        font-size: 2vh;
-    }
-    /* distinations list page: */
-    #two {
-        color: black;
-        /* font-family: 'Open Sans', sans-serif; */
-        background-image: linear-gradient(to bottom right, #F6F6F6, #F6F6F6);
-        text-shadow: none !important;
-    }
-    .glyphicon.glyphicon-chevron-left {
-        color: rgb(107, 106, 106);
-        font-size: 2vh;
-    }
-    .jumbotron {
-        background: transparent;
-        height: 30px;
-        color: black;
-        /* font-family: 'Open Sans', sans-serif; */
-    }
-    .ui-content.ui-body-a {
-        background: transparent;
-    }
-    .card {
-        /* font-family: 'Open Sans', sans-serif; */
-        border: none;
-        color: black;
-        text-shadow: none !important;
-    }
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+.logininputfield{
+
+		border: none;
+		  border-bottom: 2px solid #d1232a;
+		  background: transparent;
+		  width: 80%;
+}
+	.ui-content {
+		padding: 0;
+		margin: 0;
+	-webkit-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	-moz-box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	box-shadow: 10px 10px 20px -5px rgba(81,15,14,0.75);
+	font-family: 'Open Sans', sans-serif;
+	}
+
+.container {
+	
+	height: 200vh;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	color: #d1232a;
+}
+
+.container2 {
+	
+}
+.container3 {
+	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.home {
+	height: 27.8vh;
+	width: 80%;
+	vertical-align: center;
+	display: block;
+	margin: 0;
+}
+
+
+.btn.btn-primary{
+	width: 80%;
+	color: rgb(255, 255, 255);
+	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-color: #C58D1E;
+	
+	
+}
+#form_id{
+	margin-left:18%;
+}
+
+label{
+	margin-left:10%;
+}
+
+.helptext{
+
+	padding-top: 60%;
+	padding-left: 10%;
+	
+}
+.herebutton{
+	color: #d1232a;
+}
+
+.h2.text-center{
+	padding-top: -10%;
+}
+.card{
+margin-top: 15px;	
+box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
+font-family: 'Open Sans', sans-serif;
+border: none;
+
+
+
+}
+.card-body{
+	font-family: 'Open Sans', sans-serif;
+	height:100px;
+	color: black;
+	background-image: linear-gradient(to bottom right, #DFD1C2, #d4bba0);
+}
+
+.blockquote-footer{
+	color: aliceblue;
+
+}
+.card-header{
+	font-family: 'Open Sans', sans-serif;
+	height:40px;
+	
+	font-size: 15px;
+	background-image: transparent;
+}
+.address{
+	font-size: 15px;
+}
+
+.hrbetween{
+	
+	color: white !important;
+	background-color: white !important;
+	
+}
+.jumbotron{
+	background: transparent; 
+	height: 30px;
+	font-size: 20px;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.btn.btn-primary2.float-right.second{
+	color: rgb(255, 255, 255);
+	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	background-color: #D2BC7C;
+	border-color: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#myModal{
+	color: black;
+	
+}
+.file-upload.btn.btn-primary.two{
+	font-size: 12px;
+	width: 200px;
+}
+.footermenu{
+	color: #D84B65;
+}
+
+#des1{
+	margin-top: 15px;
+	background-image: linear-gradient(to bottom right, #d1232a, #da373d) !important;
+	color: aliceblue;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23);
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+#des1body{
+	height:550px;
+	color: aliceblue;
+	font-family: 'Open Sans', sans-serif;
+}
+.twentytwenty-container{
+	max-width: 100%;
+	height: 150px;
+	
+	border-radius: 5px;
+
+}
+.btext{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btn.btn-light{
+	color: rgb(255, 255, 255);
+	background-image: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	background-color: #D2BC7C;
+	border-color: linear-gradient(to bottom right, #D2BC7C, #C58D1E);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.glyphicon.glyphicon-chevron-left{
+	color: black !important;
+}
+
+.card-text-two{
+	font-size: 14px !important;
+}
+
+.card-img-top{
+	height: 180px;
+}
+
+
+
 }
