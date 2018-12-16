@@ -132,6 +132,7 @@ h4 {
 a.ui-link {
 	color: black;
 }
+
 @media only screen and (max-width: 736px) {
 /* For mobile phones: */
     /* Front page: */
