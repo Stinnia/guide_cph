@@ -14,10 +14,10 @@
              var infoShort = childSnap.child("info-short").val();
              statusHTML += '<a href=\"#' + id + '\"><div data-aos="fade-up" data-aos-duration="1500"><div class="border card">';
              statusHTML += '<div class="card-body"><img class="card-img-top mr-2" src="' + imgLink + '" alt=\"' + title + '\">';
-             statusHTML += '<h4 class="pt-2">';
+             statusHTML += '<div class="p-2"><h4>';
              statusHTML += title;
              statusHTML += '</h4>';
-             statusHTML += '<p class="card-text-two pr-1">' + infoShort + '</p>';
+             statusHTML += '<p class="card-text-two pb-2">' + infoShort + '</p></div>';
              statusHTML += '</div></div></div></a><br>';
          }); // end of foreach
          $('#PoiList').html(statusHTML); //sending info to the card
@@ -28,25 +28,34 @@
          var statusHTML = '<!-- Start of pages with POIs -->';
          //  var navbar = '(index/navbar.html)'.val();
          var menu = `
-         <div data-role="footer" data-position="fixed" class="menu fixed-bottom">
+         <!-- /Menu -->
+         <div data-role="footer" data-position="fixed" class="menu">
              <div data-role="navbar">
                  <ul>
                      <li>
                          <a href="#map" data-transition="fade">
-                             <div class="glyphicon glyphicon-map-marker"></div><br><br>MAP</a>
+                             <div class="glyphicon glyphicon-map-marker"></div>
+                             <div class="mt-1">MAP</div>
+                         </a>
                      </li>
                      <li>
                          <a href="#tour" data-transition="fade">
-                             <div class="glyphicon glyphicon-align-justify"></div><br><br>TOUR</a>
+                             <div class="glyphicon glyphicon-align-justify"></div>
+                             <div class="mt-1">TOUR</div>
+                         </a>
                      </li>
                      <li>
                          <a href="#info" data-transition="fade">
-                             <div class="glyphicon glyphicon-info-sign"></div><br><br>INFO</a>
+                             <div class="glyphicon glyphicon-info-sign"></div>
+                             <div class="mt-1">INFO</div>
+                         </a>
                      </li>
                  </ul>
              </div>
              <!-- /navbar -->
-         </div>`;
+             
+         </div>
+         `;
 
          var navbar = `
          <div data-role="header">
