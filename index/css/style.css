@@ -72,19 +72,19 @@ a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all {
 }
 /* menu: */
 .glyphicon.glyphicon-align-justify {
-	font-size: 4vh;
+	font-size: 200%;
 	color: #D1232A;
 }
 .glyphicon.glyphicon-map-marker {
 	color: #D1232A;
-	font-size: 4vh;
+	font-size: 200%;
 }
 .glyphicon.glyphicon-option-horizontal {
-	font-size: 4vh;
+	font-size: 200%;
 	color: #D1232A;
 }
 .glyphicon.glyphicon-info-sign {
-	font-size: 4vh;
+	font-size: 200%;
 	color: #D1232A;
 }
 .card-body {
