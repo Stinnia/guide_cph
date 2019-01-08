@@ -107,22 +107,22 @@ a.ui-btn-left.ui-btn.ui-shadow.ui-corner-all {
 /* menu: */
 
 .glyphicon.glyphicon-align-justify {
-    font-size: 200%;
+    font-size: 4vh;
     color: #D1232A;
 }
 
 .glyphicon.glyphicon-map-marker {
     color: #D1232A;
-    font-size: 200%;
+    font-size: 4vh;
 }
 
 .glyphicon.glyphicon-option-horizontal {
-    font-size: 200%;
+    font-size: 4vh;
     color: #D1232A;
 }
 
 .glyphicon.glyphicon-info-sign {
-    font-size: 200%;
+    font-size: 4vh;
     color: #D1232A;
 }
 
